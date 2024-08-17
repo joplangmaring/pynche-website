@@ -61,19 +61,24 @@ export default function Home() {
             </Link>
             <p className={`text-center lg:mt-5 mt-2 lg:text-xl text-lg ${alegreya.className}`}>Kilometre Zero</p>
           </div> */}
-          <div className=" lg:top-80 top-96 mt-10  lg:ml-0 lg:right-40   flex items-center justify-center flex-col">
-            <div className="w-[350px] h-[350px] lg:w-[600px] lg:h-[600px] shadow-xl rounded-full overflow-hidden">
-              <Image
-                loading="lazy"
-                src={Image3}
-                alt="Image 1"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="mr-[30px] ml-[30px]  lg:mr-[450px] lg:ml-[450px]">
-              <p className={` text-center lg:mt-5 mt-2 lg:text-xl text-lg ${alegreya.className}`}>Presenting A Symphony of Senses, our third event where artistry, sustainability, and culinary creativity converge amidst the breathtaking Himalayan landscapes. This weekend retreat promises a transformative experience where the five senses are harmoniously engaged through art, culinary delights and live music.</p>
+          <div className="lg:top-80 top-96 mt-10 lg:ml-0 lg:right-40 flex items-center justify-center flex-col">
+            <a href="https://onlybees.in/event/pynche">
+              <div className="w-[350px] h-[350px] lg:w-[600px] lg:h-[600px] shadow-xl rounded-full overflow-hidden">
+                <Image
+                  loading="lazy"
+                  src={Image3}
+                  alt="Image 1"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </a>
+            <div className="mr-[40px] ml-[40px] lg:mr-[500px] lg:ml-[500px] mt-5">
+              <p className={`text-center text-lg lg:text-xl text-black ${alegreya.className}`}>
+                Presenting A Symphony of Senses, our third event where artistry, sustainability, and culinary creativity converge amidst the breathtaking Himalayan landscapes. This weekend retreat promises a transformative experience where the five senses are harmoniously engaged through art, culinary delights, and live music.
+              </p>
             </div>
           </div>
+
         </div>
       </section>
 
