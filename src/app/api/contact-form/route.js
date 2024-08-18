@@ -1,11 +1,23 @@
-
 import { sendEmail } from '@/lib/nodemailer';
+
 export async function POST(req) {
   try {
     const { name, email, message } = await req.json();
+
+  
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
     if (!name || !email || !message) {
       return new Response(
         JSON.stringify({ success: false, error: 'All fields are required' }),
+        { status: 400 }
+      );
+    }
+
+
+    if (!emailRegex.test(email)) {
+      return new Response(
+        JSON.stringify({ success: false, error: 'Invalid email format' }),
         { status: 400 }
       );
     }
@@ -25,4 +37,3 @@ export async function POST(req) {
     );
   }
 }
-
