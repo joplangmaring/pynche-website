@@ -5,6 +5,7 @@ import Image3 from "../../public/Image3.jpg";
 import home_images from "../../public/home_images.png";
 import supporters from "../../public/supporters.svg";
 import supporters_large from "../../public/supporters_large.svg";
+import { GoArrowDown } from "react-icons/go";
 
 // Fonts
 import { Inter, Adamina, Alegreya } from "next/font/google";
@@ -72,13 +73,20 @@ export default function Home() {
                 />
               </div>
             </a>
-            <div className="mr-[40px] ml-[40px] lg:mr-[500px] lg:ml-[500px] mt-5">
-              <p className={`text-center text-lg lg:text-xl text-black ${alegreya.className}`}>
+{/* 
+            <div className="absolute ml-[900px] font-bold text-4xl mt-[480px] flex flex-col items-center">
+              <GoArrowUpLeft className="w-[400px] h-[300px] border border-red-500" />
+              <span className="absolute mt-[220px]">Reserve Now</span>
+            </div> */}
+            <GoArrowDown className="text-5xl font-light"/>
+            <h1 className="border border-black text-black p-2 rounded-3xl">Reserve now</h1>
+            <div className="relative mr-[40px] ml-[40px] lg:mr-[500px] lg:ml-[500px] mt-5 text-center">
+              <p className={`text-lg lg:text-xl text-black ${alegreya.className}`}>
                 Presenting A Symphony of Senses, our third event where artistry, sustainability, and culinary creativity converge amidst the breathtaking Himalayan landscapes. This weekend retreat promises a transformative experience where the five senses are harmoniously engaged through art, culinary delights, and live music.
               </p>
             </div>
-          </div>
 
+          </div>
         </div>
       </section>
 
