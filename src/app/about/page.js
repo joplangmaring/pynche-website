@@ -4,7 +4,8 @@ import Image5 from "../../../public/Image5.JPG";
 import maya from "../../../public/maya.png";
 import lamer from "../../../public/lamer.png";
 import dala from "../../../public/dala.png";
-import pynche5 from '../../../public/pynche5.png'
+import pynche5 from '../../../public/pynche5.png';
+import pynche6 from '../../../public/pynche6.png'
 
 
 //Fonts
@@ -105,20 +106,28 @@ const About = () => {
       </section>
 
       {/* <div className="flex flex-col lg:flex-row items-center justify-center w-full">
-  <div className="w-full lg:w-1/2">
-    <Image src={Image4} className="w-full h-full object-cover" alt="About PynChe Image 1" />
-  </div>
-  <div className="w-full lg:w-1/2 h-[500px]">
-    <Image src={Image5} className="w-full h-full object-cover" alt="About PynChe Image 2" />
-  </div>
-</div> */}
-      <div className="w-full h-[16vh] sm:h-[70vh]">
-        <Image src={pynche5} alt="" className="w-full h-full object-cover" />
+        <div className="w-full lg:w-1/2">
+          <Image src={Image4} className="w-full h-full object-cover" alt="About PynChe Image 1" />
+        </div>
+        <div className="w-full lg:w-1/2 h-[500px]">
+          <Image src={Image5} className="w-full h-full object-cover" alt="About PynChe Image 2" />
+        </div>
+      </div>
+       */}
+
+      <div className="hidden sm:block w-full h-[16vh] md:h-[40vh] lg:h-[70vh]">
+        <Image src={pynche5} alt=""
+          className="w-full h-full " />
       </div>
 
 
-
-
+      <div className="block lg:hidden w-full">
+        <Image
+          src={pynche6}
+          alt=""
+          className="w-full h-auto object-cover"
+        />
+      </div>
       <div className="w-full h-40 mt-10">
         <p className={`lg:text-3xl md:text-2xl sm:text-xl px-5 pb-10 font-semibold lg:px-40 ${alegreya.className}`}>
           Started as an art collaborative, PynChe was created by three women
