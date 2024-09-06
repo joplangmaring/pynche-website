@@ -2,7 +2,7 @@ import Image from "next/image";
 import Image1 from "../../public/Image1.JPG";
 import Image2 from "../../public/Image2.jpg";
 import Image3 from "../../public/Image3.jpg";
-import home_images from "../../public/home_images.png";
+import home_images from "../../public/pynche4.png";
 import supporters from "../../public/supporters.svg";
 import supporters_large from "../../public/supporters_large.svg";
 

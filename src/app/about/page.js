@@ -1,9 +1,10 @@
 import Image from "next/image";
-import Image4 from "../../../public/Image4.jpeg";
+import Image4 from "../../../public/image4.jpeg";
 import Image5 from "../../../public/Image5.JPG";
 import maya from "../../../public/maya.png";
 import lamer from "../../../public/lamer.png";
 import dala from "../../../public/dala.png";
+import pynche5 from '../../../public/pynche5.png'
 
 
 //Fonts
@@ -18,14 +19,14 @@ const About = () => {
   return (
     <>
       <section
-      className="relative h-[50vh] md:h-[70vh] w-full bg-cover bg-center "
+        className="relative h-[50vh] md:h-[70vh] w-full bg-cover bg-center "
       >
         <Image
-        src={Image4}
-        width=''
-        height=''
-        alt='Background Image'
-        className="w-full h-full object-cover"
+          src={Image4}
+          width=''
+          height=''
+          alt='Background Image'
+          className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50">
           <h1 className={`text-white lg:text-9xl text-5xl font-bold border-solid-border-red-500 ${adamina.className}`}>About us</h1>
@@ -37,7 +38,7 @@ const About = () => {
       <div className="max-w-screen-xl mx-auto p-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="bg-white shadow-lg rounded-lg p-4">
-            <Image src={maya} className="w-full aspect-square object-cover" alt='Maya-ika Lamar'/>
+            <Image src={maya} className="w-full aspect-square object-cover" alt='Maya-ika Lamar' />
             <h3 className="text-xl font-bold py-8 pb-2 text-left">
               Maya-ika Lamar
             </h3>
@@ -55,7 +56,7 @@ const About = () => {
             </p>
           </div>
           <div className="bg-white shadow-lg rounded-lg p-4">
-            <Image src={lamer} className="w-full aspect-square object-cover" alt='Lamerphylla Kharsati'/>
+            <Image src={lamer} className="w-full aspect-square object-cover" alt='Lamerphylla Kharsati' />
             <h3 className="text-xl font-bold py-8 pb-2 text-left">
               Lamerphylla Kharsati
             </h3>
@@ -71,7 +72,7 @@ const About = () => {
             </p>
           </div>
           <div className="bg-white shadow-lg rounded-lg p-4">
-            <Image src={dala} className="w-full aspect-square object-cover" alt='Dalarympei Kharmawphlang'/>
+            <Image src={dala} className="w-full aspect-square object-cover" alt='Dalarympei Kharmawphlang' />
             <h3 className="text-xl font-bold py-8 pb-2 text-left">
               Dalarympei Kharmawphlang
             </h3>
@@ -103,14 +104,21 @@ const About = () => {
         </Link>
       </section>
 
-      <div className="flex lg:flex-row flex-col items-center justify-center lg:px-40">
-        <div className="lg:w-1/2 px-5">
-          <Image src={Image4} className=" aspect-square object-cover " alt='About PynChe Image 1'/>
-        </div>
-        <div className="lg:w-1/2 px-5">
-          <Image src={Image5} className=" aspect-square object-cover object-bottom" alt='About PynChe Image 2'/>
-        </div>
+      {/* <div className="flex flex-col lg:flex-row items-center justify-center w-full">
+  <div className="w-full lg:w-1/2">
+    <Image src={Image4} className="w-full h-full object-cover" alt="About PynChe Image 1" />
+  </div>
+  <div className="w-full lg:w-1/2 h-[500px]">
+    <Image src={Image5} className="w-full h-full object-cover" alt="About PynChe Image 2" />
+  </div>
+</div> */}
+      <div className="w-full h-[16vh] sm:h-[70vh]">
+        <Image src={pynche5} alt="" className="w-full h-full object-cover" />
       </div>
+
+
+
+
       <div className="w-full h-40 mt-10">
         <p className={`lg:text-3xl md:text-2xl sm:text-xl px-5 pb-10 font-semibold lg:px-40 ${alegreya.className}`}>
           Started as an art collaborative, PynChe was created by three women
@@ -120,7 +128,7 @@ const About = () => {
           art activities and engagements.
         </p>
       </div>
-    {/* Horizontal Line */}
+      {/* Horizontal Line */}
       <div className="flex items-center justify-center mt-10 py-10">
         <hr className="w-[90%] h-1 bg-random2 " />
       </div>
