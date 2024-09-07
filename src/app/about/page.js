@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Image4 from "../../../public/image4.jpeg";
-import Image5 from "../../../public/Image5.JPG";
+
 import maya from "../../../public/maya.png";
 import lamer from "../../../public/lamer.png";
 import dala from "../../../public/dala.png";
