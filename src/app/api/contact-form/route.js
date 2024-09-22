@@ -1,4 +1,5 @@
 import { sendEmail } from '@/lib/nodemailer';
+import contact from '@/views/contact.hbs'; // Import the precompiled template
 
 export async function POST(req) {
   try {
@@ -23,7 +24,15 @@ export async function POST(req) {
     }
 
     const context = { name, email, message };
-    await sendEmail(context);
+
+    const emailHtml = contact({
+      name: name,
+      email: email,
+      message: message
+    })
+
+
+    await sendEmail(emailHtml);
 
     return new Response(
       JSON.stringify({ success: true }),

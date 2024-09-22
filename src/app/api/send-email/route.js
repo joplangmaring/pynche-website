@@ -1,5 +1,6 @@
 //api/clients/email/
-import { sendEmail } from '@/lib/nodemailer'; // Adjust the import path
+import { sendNewsletterEmail } from '@/lib/nodemailer'; // Adjust the import path
+import contact from '@/views/contact.hbs'; // Import the precompiled template
 // import connectMongo from '@/lib/mongodb';
 // import Email from '@/models/Email';
 
@@ -17,7 +18,7 @@ export const POST = async (req, res) => {
 
     // Send the email with PDF and QR code attachments
     // await sendEmail('balajiedkiwaosungoh29@gmail.com', `New email from Client - ${email}`);
-    await sendEmail(email);
+    await sendNewsletterEmail(email);
 
     return new Response(JSON.stringify({ success: true }), { status: 201 });
   } catch (error) {

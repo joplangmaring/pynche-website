@@ -130,7 +130,7 @@ const GetInTouch = () => {
       <div className="absolute inset-0 bg-black opacity-70 z-10"></div>
       <div className="relative py-20 w-full max-w-md text-white border border-opacity-60 border-black bg-white bg-opacity-5 backdrop-blur-sm p-8 rounded-lg shadow-lg mt-10 z-20">
         <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8">
-          CONTACT US
+          Have a query? Please share it with us.
         </h1>
         <form className="space-y-5" onSubmit={handleSubmit}>
           <div>
